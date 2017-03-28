@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  div.well
+    h1 Search Quotes
+    br
+    ul
+      form(action='/search',method='get')
+        label Zoek term 
+        br
+        input(type="text", name="quote")
+        input(type="submit", value="zoek")
+
+    br
+    a(href='/add') Add new quote
